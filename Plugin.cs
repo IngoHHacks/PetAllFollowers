@@ -48,5 +48,25 @@ namespace PetAllFollowers
                 __result.Add(FollowerCommandItems.PetDog());
             }
         }
+
+        [HarmonyPatch(typeof(CommandItem), "GetTitle")]
+        [HarmonyPostfix]
+        public static void CommandItem_GetTitle(ref string __result)
+        {
+            if (__result == "Pet Dog")
+            {
+                __result = "Pet";
+            }
+        }
+
+        [HarmonyPatch(typeof(CommandItem), "GetDescription")]
+        [HarmonyPostfix]
+        public static void CommandItem_GetDescription(ref string __result)
+        {
+            if (__result == "Who's a good dog? Yes, you are!")
+            {
+                __result = "Who's a good Follower? Yes, you are!";
+            }
+        }
     }
 }
