@@ -2,7 +2,7 @@
   "namespace": "IngoH",
   "name": "PetAllFollowers",
   "description": "Allows all followers to be petted.",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "dependencies": [
     "BepInEx-BepInExPack_CultOfTheLamb-5.4.21"
   ],

@@ -13,7 +13,7 @@ namespace PetAllFollowers
     {
         public const string PluginGuid = "IngoH.cotl.PetAllFollowers";
         public const string PluginName = "PetAllFollowers";
-        public const string PluginVer = "1.0.1";
+        public const string PluginVer = "1.0.2";
 
         internal static ManualLogSource Log;
         internal readonly static Harmony Harmony = new(PluginGuid);
